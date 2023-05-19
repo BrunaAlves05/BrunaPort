@@ -1,0 +1,101 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.html {
+    display: flex;
+    flex-direction: column;
+}
+.body {
+    padding: 1em 1.5em;
+}
+.span {
+    color: var(--borda);
+}
+
+.h1 {
+    padding: 3em 1.5em;
+}
+.h1_container {
+    display: flex;
+    align-items: end;
+    padding: 0 2em;
+}
+.h1_container h1 {
+    font-size: 5.4em;
+    font-weight: bold;
+}
+
+.p3 {
+    padding: .5em 1.5em;
+}
+
+#btn_rainbow {
+    position: relative;
+    margin: -1.5em 0 1.5em 4em;
+    background: var(--text);
+    width: 15%;
+    padding: 1.2em 1em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--clr);
+    transition: 0.5s;
+}
+
+#btn_rainbow:hover {
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    color: var(--clr);
+}
+
+#btn_rainbow::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: var(--back);
+}
+#btn_rainbow span {
+    position: relative;
+    z-index: 1;
+}
+
+#btn_rainbow i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+#btn_rainbow i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 20px;
+    height: 4px;
+    background-color: var(--back);
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5;
+}
+
+#btn_rainbow:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+#btn_rainbow i::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 20px;
+    height: 4px;
+    background-color: var(--back);
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5;
+}
+
+#btn_rainbow:hover i::after {
+    width: 20px;
+    left: 80%;
+}

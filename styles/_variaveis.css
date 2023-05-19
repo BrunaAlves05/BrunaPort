@@ -1,0 +1,19 @@
+:root {
+    --back: #1d1d1d;
+    --preto: #000000;
+    --cinza: #181818;
+    --text: #909096;
+    --borda:#9090962d;
+    --red: red;
+    --orange: orange;
+    --yellow: yellow;
+    --greenyellow:greenyellow;
+    --lightblue: deepskyblue;
+    --blueDark: cornflowerblue;
+    --deeppink: deeppink;
+    --grey: grey;
+    --blueviolet: blueviolet;
+    --branco: white;
+    --font: 'Poppins', sans-serif;
+    --clr: white;
+}

@@ -1,0 +1,59 @@
+.about {
+    display: grid;
+    grid-template-columns: 8% 42% 50%;
+}
+.h1 p {
+    width: 80%;
+    text-align: justify;
+    padding: 1em 2em;
+}
+
+.h2_container h2 {
+    font-size: 4em;
+    padding: 0 .6em;
+    font-weight: bold;
+}
+
+.circulo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.letra {
+    font-size: 4em;
+    color: var(--clr);
+    position: absolute;
+}
+.circulo {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: var(--clr);
+    animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+    0%{
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.text span {
+    position: absolute;
+    transform-origin: 0 250px;
+    left: 50%;
+}
+

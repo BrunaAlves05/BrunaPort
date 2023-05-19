@@ -1,0 +1,60 @@
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width:400px) {
+    .lateral {
+        display: none;
+    }
+    .span {
+        display: none;
+    }
+    .main_container {
+        max-width: 100vw;
+        font-size: .6em;
+        height: 35vh;
+    }
+    #btn_rainbow {
+        display: none;
+    }
+    .redes_mobile {
+        display: flex;
+        justify-content: space-around;
+    }
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .mobile h2 {
+        font-size: 2em;
+        padding: 1em 0;
+    }
+    .mobile p {
+        font-size: .8em;
+        text-align: justify;
+        padding: .5em 0;
+    }
+    .pj {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .work img {
+        width: 40%;
+        height: 40%;
+    }
+    .texto2{
+        display: none;
+
+    }
+    .trabalhos {
+        margin: 2em 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .trabalhos li img {
+        width: 30vw;
+    
+    }
+} 

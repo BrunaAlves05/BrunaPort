@@ -1,0 +1,75 @@
+.lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cinza);
+    height: 100vh;
+    z-index: 1;
+}
+
+.content {
+    background-color: var(--preto);
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content p:first-child{
+    font-size: 4em;
+}
+
+.content p:nth-child(2){
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: .5em 0;
+}
+
+.p2 {
+    font-size: .7em;
+    color: var(--text);
+}
+
+.links_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+.links_container a {
+    position: relative;
+    line-height: 1em;
+    color: transparent;
+    text-decoration: none;
+    padding: 1em 0;
+    text-align: center;
+    -webkit-text-stroke: 1px var(--text);
+    letter-spacing: 2px;
+}
+.links_container a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--text);
+    width: 0;
+    overflow: hidden;
+    border-right: 3px solid var(--branco);
+    -webkit-text-stroke: 1px var(--branco);
+    padding-left: -1em;
+}
+.links_container a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--text));
+    transition: 1.5s;
+}
+.icones {
+    display: flex;
+    justify-content: space-around;
+}
+
+#icon {
+    font-size: 1.5em;
+}
+
+#icon:hover {
+    box-shadow: 0 0 35px var(--clr);
+}

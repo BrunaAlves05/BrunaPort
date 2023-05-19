@@ -1,0 +1,61 @@
+.botoes {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.botoes_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.botoes li {
+    padding: 1em 0;
+}
+
+.botoes li div{
+    width: 30px;
+    height: 30px;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#botao {
+    background-color: var(--cor);
+}
+
+.red {
+    color: var(--red);
+}
+
+.orange {
+    color: var(--orange);
+}
+.yellow {
+    color: var(--yellow);
+}
+.greenyellow {
+    color: var(--greenyellow);
+}
+.deepskyblue {
+    color: var(--lightblue);
+}
+.cornflowerblue {
+    color: var(--blueDark);
+}
+.deeppink {
+    color: var(--deeppink);
+}
+.grey {
+    color: var(--grey);
+}
+.blueviolet {
+    color: var(--blueviolet);
+}
+.transition {
+    transition: 1s;
+}
+
